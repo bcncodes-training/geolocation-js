@@ -1,7 +1,7 @@
 let map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
+    center: {lat: 41.6, lng: 2.5},
     zoom: 8
   });
 
@@ -31,5 +31,13 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos){
                             'Error: Tu navegador no soporta la Geolocalización')
     infoWindow.open(map);
 }
+
 }
+/*
+function locate(lat, lon) {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: lat, lng: lon},
+      zoom: 8
+    });
+}*/
 
